@@ -1,0 +1,173 @@
+body{
+    background: #1f1919f5;
+}
+
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.navigation-item {
+    color: rgb(88, 47, 47);
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.1s;
+    padding: 0.5em;
+    display: block;
+}
+
+.navigation-item:hover,
+.navigation-item.current {
+    color: rgb(236, 229, 229);
+}
+
+
+.container {
+    width: 1190px;
+}
+
+#graphic {
+    padding-top: 40px;
+}
+.hidden>*{
+  
+   
+    opacity: 0;
+}
+.reveal{
+  
+  
+    opacity: 1;
+}
+
+#sections{
+position: relative;
+width: 250px;
+top: 10px;
+z-index: 90;
+padding-bottom: 200px;
+}
+section {
+    display: inline-block;
+    width: 250px;
+    top: 100px;
+    z-index: 900;
+    padding-bottom: 300px;
+    justify-content: left;
+    align-items: middle;
+     color: rgb(77, 31, 31);
+      font-size: 2rem;
+    height: 900px;
+       
+}
+
+.step {
+    margin-bottom: 100px;
+    font-family: "TiemposTextWeb-Regular", "Georgia";
+    font-size: 16px;
+    line-height: 23px;
+    color: #f2f2fa;
+}
+
+#sections .section-title {
+    font-family: Arial, Helvetica, "san-serif";
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f7eaea;
+    line-height: 1.2em;
+}
+
+#extra-space {
+    height: 400px;
+}
+
+#vis {
+    display: inline-block;
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    left: 500px;
+    /* height: 600px; */
+    /* width: 600px; */
+    /* background-color: #ddd; */
+}
+
+#vis .title {
+    font-size: 120px;
+    text-anchor: middle;
+}
+
+#vis .section-title {
+    font-size: 80px;
+    text-anchor: middle;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #666;
+    shape-rendering: crispEdges;
+}
+
+.highlight {
+    fill: #008080;
+    font-weight: bold;
+}
+
+
+.activate{
+    color: antiquewhite;
+    animation: activate 15s linear
+}
+.Connections-layer[class=reveal]>.routes {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 20s linear alternate infinite;
+}
+.sticky,
+.Detail-title
+.active[class=section-title] {
+    position: fixed;
+    top: 300;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+@keyframes dash {
+    from {
+        stroke-dashoffset: 1000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes activate{
+from{
+    opacity: 0;
+}to{
+
+    opacity: 1;
+}
+
+
+}
+
+test{
+    color: white;
+    opacity: 1;
+}
+#Final{
+   height:50px;
+
+}
